@@ -1,0 +1,14 @@
+/* CSS Document */
+html,body,img,h1,h2,h3,h4,h5,h6,form,p,ul,li,ol,li,td,input,dl,dt,dd{ margin:0; padding:0; }
+img { border:none; }
+input{ outline:none;}
+h1,h2,h3,h4{ font-weight:normal;}
+i,em{ font-style:normal;}
+ul li, ol li{ list-style:none; } 
+body { color:#333; font:12px/24px "微软雅黑","SimSun","Arial Narrow",HELVETICA; }
+a{ text-decoration:none; color:#333;}
+/*a:hover{ color:red;}*/
+.clearfix:after{ content:""; font-size:0; display:block; visibility:hidden; overflow:hidden; clear:both; height:0;}
+
+
+.main{ width:1000px; margin:0 auto;}

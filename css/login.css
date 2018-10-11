@@ -1,0 +1,50 @@
+body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background:rgba(0,0,0,.6);*/
+    /*z-index: 88;*/
+}
+/*#append_parent{*/
+/*position: fixed;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*background:rgba(0,0,0,.6);*/
+/*z-index: 88;*/
+/*}*/
+.acc-form-p{
+    width: 400px;
+}
+.acc-form-input{
+    width: 181px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    border: 1px solid #c2c1c1;
+    border-radius: 13px;
+    margin-left: 10px;
+}
+.vcode-input{
+    width: 181px;
+    border-radius: 13px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.mobile{
+    width: 181px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    border: 1px solid #c2c1c1;
+    border-radius: 13px;
+}
+.lablename{
+    text-align: right;
+    width: 110px;
+    float: left;
+    line-height: 36px;
+}

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/shequ.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <!--<link rel="stylesheet" href="../css/bbs.css">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.min.css">-->
+</head>
+<body>
+
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<header>
+    <div class="wrap">
+        <div class="logo">
+            <a href="yadi.html"><img src="../img/logo.png" alt="雅迪电动车" /></a>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li><a href="login.html" >登录</a> </li>
+                <li>|</li>
+                <!--<li><a href="plugin.php?id=acc&amp;action=register" onclick="showWindow('register', this.href);return false;">注册</a></li>-->
+                <li><a href="register.html">注册</a></li>
+            </ul>
+        </div>
+        <div class="search-form" style="">
+            <form method="post" autocomplete="off" action="search.php?mod=forum">
+                <input type="hidden" name="formhash" value="5527b540" />
+                <input type="hidden" name="searchsubmit" value="yes" />
+                <input type="text" placeholder="请输入搜索帖子" name="srchtxt" size="22" maxlength="40" value="" tabindex="1" x-webkit-speech speech class="search-input" style="height: 25px;"/>
+                <p>|</p>
+                <button type="submit"><i class="icon icon-font icon-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="yadi.html">首页</a></li>
+            <li><a href="forum-all-1.html">论坛</a></li>
+            <li style="position: relative;">
+                <a href="javascript:;">版块</a>
+                <div class="nav-sub">
+                    <ul><li>
+                        <a href="forum-39-1.html" >探索学院</a>
+                    </li>
+                        <li>
+                            <a href="forum-75-1.html" >站务大厅</a>
+                        </li>
+                        <li>
+                            <a href="forum-76-1.html" > 活动通告</a>
+                        </li>
+                        <li>
+                            <a href="forum-79-1.html" >售后服务</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="http://www.yadea.com.cn">在线商城</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!--<div class="swiper-container qf-banner">-->
+    <!--<div class="swiper-wrapper">-->
+        <!--<div class="swiper-slide bg-image one" ><img src="../img/04.jpg" alt=""></div>-->
+        <!--<div class="swiper-slide bg-image two"><img src="../img/05.jpg" alt=""></div>-->
+        <!--<div class="swiper-slide bg-image three"><img src="../img/06.jpg" alt=""></div>-->
+    <!--</div>-->
+    <!--<div class="swiper-pagination"></div>-->
+<!--</div>-->
+<div class="wrapper" >
+    <ul id="box" >
+        <li style="z-index:6;"><a href=""><img src="../img/04.jpg" alt=""/></a></li>
+        <li style="z-index:5;"><a href=""><img src="../img/05.jpg" alt=""/></a></li>
+        <li style="z-index:4;"><a href=""><img src="../img/06.jpg" alt=""/></a></li>
+    </ul>
+    <ol style="z-index: 10;" id="uu">
+        <li class="current"></li>
+        <li></li>
+        <li></li>
+
+    </ol>
+</div>
+
+
+</body>
+<script src="../js/jquery-3.1.0.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/startMove1.4.js"></script>
+<script>
+    swiper.init();
+</script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,//可选选项，自动滑动
+        loop: true,
+        effect : 'fade',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable :true,
+        },
+    })
+</script>-->
+</html>
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>雅迪社区 -  雅迪集团控股有限公司</title>
+
+    <meta name="keywords" content="雅迪社区" />
+    <meta name="description" content="雅迪社区 " />
+    <meta name="generator" content="Discuz! X3.4" />
+    <meta name="author" content="Discuz! Team and Comsenz UI Team" />
+    <meta name="copyright" content="2001-2017 Comsenz Inc." />
+    <meta name="MSSmartTagsPreventParsing" content="True" />
+    <meta http-equiv="MSThemeCompatible" content="Yes" />
+    <base href="http://www.yadea.com.cn/bbs/" /><link rel="stylesheet" type="text/css" href="data/cache/style_2_common.css?fpu" /><link rel="stylesheet" type="text/css" href="data/cache/style_2_forum_index.css?fpu" /><script type="text/javascript">var STYLEID = '2', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'fpu', charset = 'utf-8', discuz_uid = '0', cookiepre = 'ETPJ_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = '', creditnotice = '1|电量|,2|经验|,3||', defaultstyle = '', REPORTURL = 'aHR0cDovL3d3dy55YWRlYS5jb20uY24vZm9ydW0ucGhwL2Jicw==', SITEURL = 'http://www.yadea.com.cn/bbs/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+    <script src="static/js/common.js?fpu" type="text/javascript"></script>
+    <meta name="application-name" content="雅迪社区" />
+    <meta name="msapplication-tooltip" content="雅迪社区" />
+    <meta name="msapplication-task" content="name=首页;action-uri=http://www.yadea.com.cn/bbs/forum.php;icon-uri=http://www.yadea.com.cn/bbs/static/image/common/bbs.ico" />
+    <script src="static/js/forum.js?fpu" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="static/iconfont/iconfont.css?fpu" />
+    <script src="static/js/jquery.min.js?fpu" type="text/javascript"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+</head>
+
+<body>
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<header>
+    <div class="wrap">
+        <div class="logo">
+            <a href="./"><img src="static/image/community/logo.png" alt="雅迪电动车" /></a>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li><a href="plugin.php?id=acc&amp;action=login&amp;referer=" onclick="showWindow('login', this.href);return false;">登录</a> </li>
+                <li>|</li>
+                &lt;!&ndash;<li><a href="plugin.php?id=acc&amp;action=register" onclick="showWindow('register', this.href);return false;">注册</a></li>&ndash;&gt;
+                <li><a href="plugin.php?id=acc&amp;action=register" onclick="showWindow('agreement', 'plugin.php?id=acc&action=agreement', 'get', 0);return false;" id="goregister">注册</a></li>
+            </ul>
+        </div>
+        <div class="search-form" style="">
+            <form method="post" autocomplete="off" action="search.php?mod=forum">
+                <input type="hidden" name="formhash" value="5527b540" />
+                <input type="hidden" name="searchsubmit" value="yes" />
+                <input type="text" placeholder="请输入搜索帖子" name="srchtxt" size="22" maxlength="40" value="" tabindex="1" x-webkit-speech speech class="search-input" style="height: 25px;"/>
+                <p>|</p>
+                <button type="submit"><i class="icon icon-font icon-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./">首页</a></li>
+            <li><a href="forum-all-1.html">论坛</a></li>
+            <li style="position: relative;">
+                <a href="javascript:;">版块</a>
+                <div class="nav-sub">
+                    <ul><li>
+                        <a href="forum-39-1.html" >探索学院</a>
+                    </li>
+                        <li>
+                            <a href="forum-75-1.html" >站务大厅</a>
+                        </li>
+                        <li>
+                            <a href="forum-76-1.html" > 活动通告</a>
+                        </li>
+                        <li>
+                            <a href="forum-79-1.html" >售后服务</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="http://www.yadea.com.cn">在线商城</a></li>
+        </ul>
+    </nav>
+
+</header>
+<div style="height: 62px;"></div>
+<link rel="stylesheet" type="text/css" href="static/js/swiper/swiper.min.css?fpu" />
+<script src="static/js/swiper/swiper.min.js?fpu" type="text/javascript"></script>
+<script src="static/js/community_index.js?fpu" type="text/javascript"></script>
+<div class="community">
+    &lt;!&ndash;轮播开始&ndash;&gt;
+    <div class="rel com-header">
+        &lt;!&ndash; 轮播图片&ndash;&gt;
+        <div id="slider" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="http://www.yadea.com.cn/bbs/thread-545-1-1.html" class="slide-img">
+                        <img src="static/image/community/index/scroll-1.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.yadea.com.cn/bbs/thread-376-1-3.html" class="slide-img">
+                        <img src="static/image/community/index/scroll-7.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.yadea.com.cn/bbs/thread-351-1-3.html" class="slide-img">
+                        <img src="static/image/community/index/scroll-6.jpg">
+                    </a>
+                </div>
+
+
+            </div>
+            &lt;!&ndash; 添加按钮&ndash;&gt;
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+&lt;!&ndash;轮播结束&ndash;&gt;<div id="wp" class="wp">&lt;!&ndash;主推版块开始&ndash;&gt;
+    <style type="text/css">
+        .top_text{
+            color: #f00;
+            border: 2px solid #f00;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 18px;
+            width: 18px;
+            height: 18px;
+            margin-top: -21px;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder;
+            float: right;
+            margin-right: -44px;
+        }
+    </style>
+    <div class="main-push">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width: 352px;">
+                    <a href="forum-39-1.html" class="slide-img">
+                        <img src="static/image/community/index/main-pic1.png" />
+                    </a>
+                </div>
+                <div class="swiper-slide" style="width: 352px;">
+                    <a href="forum-38-1.html" class="slide-img">
+                        <img src="static/image/community/index/main-pic2.png" />
+                    </a>
+                </div>
+                <div class="swiper-slide" style="width: 352px;">
+                    <a href="forum-76-1.html" class="slide-img">
+                        <img src="static/image/community/index/main-pic3.png" />
+                    </a>
+                </div>
+            </div>
+            &lt;!&ndash; Add Pagination &ndash;&gt;
+            &lt;!&ndash;<div class="swiper-pagination swiper-pagination-white"></div>&ndash;&gt;
+            &lt;!&ndash; Add Arrows &ndash;&gt;
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.main-push .swiper-container', {
+//        pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 30,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop:true,
+        });
+
+    </script>
+    &lt;!&ndash; 主推版块结束&ndash;&gt;
+    &lt;!&ndash;最新主块开始&ndash;&gt;
+    <div class="clearfix hot-content" id="threadlist">
+        &lt;!&ndash;最新热帖开始&ndash;&gt;
+        <div class="fle new-hotCard">
+            <div class="new-hotCard-item">
+                <div style="border-bottom: 1px #ccc solid; overflow: hidden;">
+                    <div class="new-hotCard-title f24" style="float: left; border:none;">最新热帖</div>
+                    <div class="new-hotCard-title f24" style="float: right; border:none; font-size: 16px;">
+                        <a  href="forum.php?mod=index&amp;orderby=deline" class="index-news-font-color"> 最新</a>
+                        <a  href="forum.php?mod=index&amp;orderby=hot" class="index-news-font-color"> 热门</a>
+                        <a  href="forum.php?mod=index&amp;orderby=replay" class="index-news-font-color"> 精华</a>
+                    </div>
+                </div>
+                <div style="float: none; clear: both;"></div>
+                <ul class="new-hotCard-list">
+                    &lt;!&ndash;热帖模板&ndash;&gt;
+
+                </ul>
+                <ul class="new-hotCard-list">
+                    &lt;!&ndash;热帖模板&ndash;&gt;
+
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1963.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1963&size=big&414355686"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">陈俊强</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;<span title="2018-10-8 11:46">9&nbsp;小时前</span>&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-669-1-1.html">&lt;!&ndash;服务不好&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-669-1-1.html">
+                                        服务不好                                         </a>
+                                </div>
+                                <ul class="new-imgList">
+                                    <li>
+                                        <a href="thread-669-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/08/113955po8x7g7zkzgiozw6.jpg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thread-669-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/08/114004oxmt9r1ab77xj09f.png" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-669-1-1.html">
+                                        <span style="float: left; ">于 <span title="2018-10-8 11:40">9&nbsp;小时前</span> 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">1</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">1</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">54</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1858.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1858&size=big&81804292"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">泡杯茶</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;<span title="2018-10-8 08:35">12&nbsp;小时前</span>&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-647-1-1.html">&lt;!&ndash;e7li plus 使用体会&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-647-1-1.html">
+                                        e7li plus 使用体会                                         </a>
+                                </div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-647-1-1.html">
+                                        <span style="float: left; ">于 2018-9-1 08:14 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">3</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">7</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">1274</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1933.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1933&size=big&1773328248"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">你好，疯子！</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;<span title="2018-10-5 11:28">3&nbsp;天前</span>&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-661-1-1.html">&lt;!&ndash;E7&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-661-1-1.html">
+                                        E7                                         </a>
+                                </div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-661-1-1.html">
+                                        <span style="float: left; ">于 2018-9-20 21:18 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">1</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">2</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">640</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1741.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1741&size=big&1772616106"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">洗澡不洗头</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;<span title="2018-10-5 11:26">3&nbsp;天前</span>&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-600-1-1.html">&lt;!&ndash;新入手z3,蓝牙怎么都和手机连不上&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-600-1-1.html">
+                                        新入手z3,蓝牙怎么都和手机连不上                                         </a>
+                                </div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-600-1-1.html">
+                                        <span style="float: left; ">于 2018-6-28 09:31 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">2</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">3</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">1145</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1958.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1958&size=big&1857077737"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">安静了</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;<span title="2018-10-5 00:48">3&nbsp;天前</span>&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-668-1-1.html">&lt;!&ndash;求解车的型号想购个配件&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-668-1-1.html">
+                                        求解车的型号想购个配件                                         </a>
+                                </div>
+                                <ul class="new-imgList">
+                                    <li>
+                                        <a href="thread-668-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/05/004659usnkp1o7ssb4w4kw.jpeg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thread-668-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/05/004708ip9d258y1rky5941.jpeg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thread-668-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/05/004714fk0l9kr1kriohqoe.jpeg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-668-1-1.html">
+                                        <span style="float: left; ">于 <span title="2018-10-5 00:48">3&nbsp;天前</span> 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">0</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">0</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">93</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1957.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1957&size=big&699169443"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">伟伟</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;<span title="2018-10-3 19:47">5&nbsp;天前</span>&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-667-1-1.html">&lt;!&ndash;Led尾灯下雨居然能坏掉？牛啊！&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-667-1-1.html">
+                                        Led尾灯下雨居然能坏掉？牛啊！                                         </a>
+                                </div>
+                                <ul class="new-imgList">
+                                    <li>
+                                        <a href="thread-667-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/03/192317nq9299qalqtao2na.jpg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thread-667-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/03/192332wsqvkassnvny5yxn.jpg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thread-667-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/03/192538cdj7t7xjzw47879w.jpg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-667-1-1.html">
+                                        <span style="float: left; ">于 <span title="2018-10-3 17:53">5&nbsp;天前</span> 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">1</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">3</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">241</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1956.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1956&size=big&1071058327"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">qxg2756</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;<span title="2018-10-3 17:03">5&nbsp;天前</span>&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-666-1-1.html">&lt;!&ndash;求鉴别车型&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-666-1-1.html">
+                                        求鉴别车型                                         </a>
+                                </div>
+                                <ul class="new-imgList">
+                                    <li>
+                                        <a href="thread-666-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/03/170239qrtffvvd8tatvs1y.jpg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thread-666-1-1.html" class="imgList-a">
+                                            <img src="data/attachment/forum/201810/03/170301moxomuuxyvvjyxuy.jpg" class='imgList-img'/>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-666-1-1.html">
+                                        <span style="float: left; ">于 <span title="2018-10-3 17:03">5&nbsp;天前</span> 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">0</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">0</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">139</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    &lt;!&ndash;判断帖子是不是售后服务板块&ndash;&gt;
+                    <li>
+                        <div class="clearfix new-hotCard-w">
+                            <div class="fle new-hotCard-left">
+                                <a href="space-uid-1951.html" c="1"><img src="http://120.55.42.194:3389/bbs/uc_server/avatar.php?uid=1951&size=big&1565535634"/></a>
+                            </div>
+                            <div class="fle new-hotCard-right">
+                                <div class="f18 new-hotCard-name">15563153116</div>
+                                &lt;!&ndash;<div class="f16 new-hotCard-time">&lt;!&ndash;2018-9-30 19:12&ndash;&gt;</div>&ndash;&gt;
+                                &lt;!&ndash;<div class="f18 new-hotCard-subject"><a href="thread-665-1-1.html">&lt;!&ndash;战警6温度怎么显示&ndash;&gt;</a></div>&ndash;&gt;
+                                <div class="f18 new-hotCard-desc">
+                                    <a href="thread-665-1-1.html">
+                                        战警6温度怎么显示                                         </a>
+                                </div>
+                                <div class="f16 new-hotCard-icon">
+                                    <a href="thread-665-1-1.html">
+                                        <span style="float: left; ">于 2018-9-30 19:12 发表   </span>
+                                        <span style="float: right;"><i class="icon icon-font icon-staro"></i><span class="common-icon">0</span></span>
+                                        <span style="float: right;"><i class="icon icon-font icon-commentingo" ></i><span class="common-icon">0</span></span>
+                                        <span style="float: right;"><i class="eye-icon"></i><span class="common-icon">122</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                &lt;!&ndash;分页&ndash;&gt;
+                <div class="clearfix pagination" style="text-align: center;">
+                    <div class="pg"><strong>1</strong><a href="forum.php?page=2#threadlist">2</a><a href="forum.php?page=3#threadlist">3</a><a href="forum.php?page=4#threadlist">4</a><a href="forum.php?page=5#threadlist">5</a><a href="forum.php?page=6#threadlist">6</a><a href="forum.php?page=7#threadlist">7</a><a href="forum.php?page=8#threadlist">8</a><a href="forum.php?page=9#threadlist">9</a><a href="forum.php?page=10#threadlist">10</a><a href="forum.php?page=47#threadlist" class="last"><span style="margin-left: 10px;">...</span> 47</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location='forum.php?page='+this.value;; doane(event);}" /><span title="共 47 页"> / 47 页</span></label><a href="forum.php?page=2#threadlist" class="nxt"></a></div>                    </div>
+            </div>
+        </div>
+        &lt;!&ndash;最新热帖结束&ndash;&gt;
+
+        <div class="fle another-right">
+            &lt;!&ndash;人气排行榜开始&ndash;&gt;
+            <style>
+
+                .pop-rank-ul{
+                    list-style: none;
+                }
+                .pop-rank-week{
+                    margin-top: 15px;
+                }
+                .lessonsubject:hover{
+                    color: #ff8b00;
+                }
+                .moods-push1{
+                    height: 220px;
+                }
+                .pop-rank-wrap {
+                    border-radius: 10px;
+                    overflow-y: auto;
+                    font-size:24px;
+                    padding-bottom: 20px;
+                    overflow-x: hidden;
+                }
+                .pop-rank-net {
+                    padding: 0 20px;
+                    background: #fff;
+                    border-radius: 10px;
+                    padding-bottom: 30px
+
+                }
+            </style>
+            <div class="pop-rank-wrap"  >
+                <div class="pop-rank-net">
+                    <div class="pop-rank-title f24" style="padding-top: 0px;">
+                        <span>侃天侃地</span>
+                        <a href="forum.php?mod=viewthread&amp;tid=">更多</a>
+                    </div>
+                    <div class="pop-rank-content" >
+                        <div class="pop-rank-week"  >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-rank-net" style="margin-top: 50px;">
+                <div class="pop-rank-title f24" style="padding-top: 0px;">
+                    <span>迪哥微讲堂</span>
+                    <a href="forum.php?mod=forumdisplay&amp;fid=71&amp;filter=subid&amp;subid=38">更多</a>
+                </div>
+                <div class="pop-rank-content">
+                    <div class="lesson-img" style="margin-top: 15px;">
+                        <video src="static/image/community/index/advert.mp4" width="300px"  controls="controls"></video>
+                    </div>
+                    <div class="pop-rank-week">
+                        <ul class="pop-rank-ul">
+                            &lt;!&ndash;  <li>
+ <a href="thread-301-1-1.html" title="【征名活动】&#45;&#45;开始啦，想要我吗，那就来取名吧！" class="lessonsubject">
+     <p>【征名活动】&#45;&#45;开始啦，想要我吗，那就来取名吧！</p>
+ </a>
+</li> &ndash;&gt;
+                            &lt;!&ndash;  <li>
+                 <a href="thread-464-1-1.html" title="雅迪锐力72v" class="lessonsubject">
+                     <p>雅迪锐力72v</p>
+                 </a>
+             </li> &ndash;&gt;
+                            &lt;!&ndash;  <li>
+                 <a href="thread-358-1-1.html" title="有这款车吗？战锐缤钻版E-G—塔夫绸白分亮黑" class="lessonsubject">
+                     <p>有这款车吗？战锐缤钻版E-G—塔夫绸白分亮黑</p>
+                 </a>
+             </li> &ndash;&gt;
+                            &lt;!&ndash;  <li>
+                 <a href="thread-462-1-1.html" title="跪求大神帮忙 解释下这个电机型号，谢谢了" class="lessonsubject">
+                     <p>跪求大神帮忙 解释下这个电机型号，谢谢了</p>
+                 </a>
+             </li> &ndash;&gt;
+                            &lt;!&ndash;  <li>
+                 <a href="thread-594-1-1.html" title="莱克的车灯为什么这样设计" class="lessonsubject">
+                     <p>莱克的车灯为什么这样设计</p>
+                 </a>
+             </li> &ndash;&gt;
+                            &lt;!&ndash;  <li>
+                 <a href="thread-567-1-1.html" title="关于雅迪轻果款 48伏电机到底是350W还是240W,求官方说法" class="lessonsubject">
+                     <p>关于雅迪轻果款 48伏电机到底是350W还是240W,求官方说法</p>
+                 </a>
+             </li> &ndash;&gt;
+                            &lt;!&ndash;  <li>
+                 <a href="thread-489-1-1.html" title="雅迪现在使用的是星恒电池吗？" class="lessonsubject">
+                     <p>雅迪现在使用的是星恒电池吗？</p>
+                 </a>
+             </li> &ndash;&gt;
+                            &lt;!&ndash;  <li>
+                 <a href="thread-416-1-1.html" title="雅迪最新车型？？？？？S-M3S" class="lessonsubject">
+                     <p>雅迪最新车型？？？？？S-M3S</p>
+                 </a>
+             </li> &ndash;&gt;
+                            <li>
+                                <a href="http://mp.weixin.qq.com/s/ont9b8IDJfa181IYwgZLRg" title="新买的电动车怎么充电？这事太重要了！" class="lessonsubject" target="_blank">
+                                    <p>1. 新买的电动车怎么充电？这事太重要了</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://mp.weixin.qq.com/s/_n21TrhF7PlT8b4438eOAA" title="如果还需要给您一个选雅迪的理由，那就是我们三包时间延长了！" class="lessonsubject" target="_blank">
+                                    <p>2. 如果还需要给您一个选雅迪的理由，那就是我们三包时间延长了！</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://mp.weixin.qq.com/s/qENTo8xh5OuvNAokfonZFw" title="你，你，你，小雅喊您回店保养了！" class="lessonsubject" target="_blank">
+                                    <p>3. 你，你，你，小雅喊您回店保养了！</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://mp.weixin.qq.com/s/TLkkvQU5deQYgSE-ZVcPJQ" title="这些隐藏的功能你不知道？那我告诉你" class="lessonsubject" target="_blank">
+                                    <p>4. 这些隐藏的功能你不知道？那我告诉你</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://mp.weixin.qq.com/s/KYYCStUU2C9XdIkLLYMVMA" title="冬季，让我们换个姿势给电动车充电" class="lessonsubject" target="_blank">
+                                    <p>5. 冬季，让我们换个姿势给电动车充电</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://mp.weixin.qq.com/s/wGJOvjgrla2wc5AD2mF3HQ" title="你必须要知道关于电动车续航里程变短的事" class="lessonsubject" target="_blank">
+                                    <p>6. 你必须要知道关于电动车续航里程变短的事</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://mp.weixin.qq.com/s/mPzCBU7EI-iCT4FbgvtDWQ" title="最蓝瘦的不是没车，而是有车不懂得保养！" class="lessonsubject" target="_blank">
+                                    <p>7. 最蓝瘦的不是没车，而是有车不懂得保养！</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://mp.weixin.qq.com/s/1M_ejCq_HQA4qVo5Wrdt_Q" title="别吹你是老司机，买电动车知道这些才算你及格！" class="lessonsubject" target="_blank">
+                                    <p>8. 别吹你是老司机，买电动车知道这些才算你及格！</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-rank-net" style="margin-top: 50px;">
+                <div class="pop-rank-title f24" style="padding-top: 0px;">
+                    <span>号外号外</span>
+                    <a href="thread-264-1-1.html">更多</a>
+                </div>
+                <div class="pop-rank-content" >
+                    <div class="pop-rank-week" style="margin-top: 15px; overflow: hidden;">
+                        <a href="thread-264-1-1.html" style="display: block;">
+                            <div class="moods-push1">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="width: 300px; height: 220px;">
+                                            <img src="data/attachment/forum/201711/16/173236s0tnx5nxp5rz0jxx.jpg" class="slide-img" width="300" height="200" style="display: block; border-radius: 20px;">
+                                        </div>
+                                        <div class="swiper-slide" style="width: 300px; height: 220px;">
+                                            <img src="data/attachment/forum/201711/16/173236t355k73qfs3e73y1.jpg" class="slide-img" width="300" height="200" style="display: block; border-radius: 20px;">
+                                        </div>
+                                        <div class="swiper-slide" style="width: 300px; height: 220px;">
+                                            <img src="data/attachment/forum/201711/16/173236tfhp1rzy1334f4ue.jpg" class="slide-img" width="300" height="200" style="display: block; border-radius: 20px;">
+                                        </div>
+                                        <p style="position:absolute;bottom:0px;padding:3px;margin:21px;text-align: center; width: 294px;margin-left: 0px;
+                             background-color: #0e0e0e; opacity: 0.4; color: #fff; border-bottom-right-radius: 20px;border-bottom-left-radius: 13px; z-index: 999;">
+                                            号外号外                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <script>
+                            var swiper = new Swiper('.moods-push1  .swiper-container', {
+//                    paginationClickable: true,
+                                centeredSlides: true,
+                                autoplay: 3000,
+                                speed:900,
+                                loop: true,
+                                effect: 'fade'
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>                &lt;!&ndash;人气排行榜结束&ndash;&gt;
+        </div>
+
+    </div>
+</div>
+&lt;!&ndash;最新主块结束&ndash;&gt;	</div>
+<style>
+    .clearfix li{ display: block;}
+    footer .footer-content li a{
+        font-size: 16px;
+    }
+    footer .footer-content li a:hover{
+        color: #ff8b00;
+    }
+    .acctention-inner{
+        width: 290px;
+        margin: 30px auto 0;
+        height: 120px;
+    }
+    #weibo a:hover{
+        color: #ff8b00;
+    }
+</style>
+<div id="ft"></div>
+<footer>
+    <div class="footer-content clearfix">
+        <div style=" width:850px; margin: 0 auto;">
+            <ul>
+                <li><a href="forum.php?mod=viewthread&amp;tid=250&amp;fromuid=1">社区版规</a></li>
+                <li><a href="forum.php?mod=viewthread&amp;tid=251&amp;fromuid=1">新人手册</a></li>
+                <li><a href="forum.php?mod=viewthread&amp;tid=249&amp;fromuid=1">申请版主</a></li>
+                &lt;!&ndash;			    <li><a href="thread-147-1-1.html">申请同城会长</a></li>
+                                                <li><a href="thread-147-1-1.html">小黑屋</a></li>&ndash;&gt;
+                &lt;!&ndash;<li><a href="thread-147-1-1.html">建议反馈</a></li>&ndash;&gt;
+                <li><a href="http://www.yadea.com.cn">在线商城</a></li>
+                <li><a href="forum.php" style="font-size: 16px;font-weight: 500;">
+                    <img src="static/image/community/home/iphoneEnter.png" width="auto" height="30px" style="vertical-align: middle;">
+                    <span style="color: #939499;">手机端</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="attention" style="position: relative">
+            <div class="acctention-inner clearfix">
+                <div style="float: left;"  class="weixin">
+                    <img  src="static/image/community/weixin.png" width="60px" height="50px">
+                    <span>关注官方微信</span>
+                </div>
+                <div style="float:right; " id="weibo">
+                    <a href="http://weibo.com/1997yadea" target="_blank">
+                        <img src="static/image/community/sina.png" width="60px" height="50px">
+                        <span>关注官方微博</span>
+                    </a>
+                </div>
+            </div>
+            <p class="weixin_img" style="left: 29%;position: absolute;top: 33px; ">
+                <img src="static/image/community/qrcode-wechat.png" width="100px" height="100px">
+            </p>
+        </div>
+
+
+        <div class="toucher">
+            <div>
+                <p><img src="static/image/community/numbuer.png"><span style="font-size: 18px; color:#a6a7ab; font-weight: bolder;">400-900-1212</span></p>
+            </div>
+            <div>
+                <p><img src="static/image/community/email.png"><span style=" color: #939499">ydsh@yadea.com.cn</span></p>
+            </div>
+            <div>
+                <p><img src="static/image/community/email.png"><span style=" color: #939499">sales@yadea.com.cn</span></p>
+            </div>
+            <div>
+                <p><img src="static/image/community/location.png"><span style=" color: #939499">上海市申长路818号虹桥天地广场1号楼11楼</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery('.weixin').mousemove(function () {
+            jQuery('.weixin_img').show();
+        });
+        jQuery('.weixin').mouseout(function () {
+            jQuery('.weixin_img').hide();
+        });
+    })
+</script>
+
+<div id="scrolltop">
+    &lt;!&ndash;	<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+    &ndash;&gt;
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+</body>
+</html>
+<script type="text/javascript">
+
+    jQuery(".imgList-a").css({
+        "display": "flex",
+        "justify-content": "center",
+        "flex-direction": "column",
+        "align-items": "center",
+        "overflow": "hidden",
+        "width": "140px",
+        "height": "100px"
+    })
+    w=jQuery(".imgList-a").find('img').width();
+    h=jQuery(".imgList-a").find('img').height();
+    if(w/h>1.2){
+        jQuery(".imgList-a .imgList-a").css({
+            "hight": "200px",
+            "width":"auto"
+        })
+    }else {
+        jQuery(".imgList-a .imgList-a").css({
+            "width": "200px",
+            "height": "auto"
+        })
+    }
+</script>-->

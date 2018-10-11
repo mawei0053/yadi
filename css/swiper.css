@@ -1,0 +1,15 @@
+body{padding:0;margin:0;}
+
+.qf-banner {
+
+    width: 100%;
+    height: 625px;}
+.bg-image {
+    background-size: cover;
+    background-position: center;
+}
+.one{background-image: url(../img/01.jpg);}
+.two{background-image: url(../img/02.jpg);}
+.three{
+    background-image: url(../img/03.jpg);
+}

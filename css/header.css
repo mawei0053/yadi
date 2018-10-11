@@ -1,0 +1,131 @@
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    top:0px;
+    min-width: 1190px;
+    z-index: 999;
+    height: 62px;
+    border-bottom: 1px solid #eee;
+}
+
+header .wrap {
+    width: 1190px;
+    margin: 0 auto;
+}
+header .logo {
+    float: left;
+}
+
+header .header-right {
+    float: right;
+}
+
+header .header-right a:hover {
+    color: #ff8000;
+}
+
+header .header-right ul {
+    float: right;
+}
+
+header .header-right ul li {
+    position: relative;
+    float: left;
+    line-height: 59px;
+    padding: 0 4px;
+}
+header .header-right>ul>li:hover .drop-menu{
+    display: block;
+}
+
+header .header-right .drop-menu {
+    position: absolute;
+    width: 100px;
+    top: 60px;
+    left: 0;
+    z-index: 99;
+    background-color: #f8f8f8;
+    display: none;
+}
+
+header .header-right .drop-menu li {
+    width: 100%;
+    text-align: center;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+}
+
+header .header-right .drop-menu li a {
+    display: block;
+}
+
+/*header nav閮ㄥ垎*/
+header nav>ul {
+    text-align: center;
+}
+
+header nav>ul>li {
+    padding: 0 25px;
+    display: inline-block;
+}
+
+header nav>ul>li>a {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+header nav>ul>li:hover>a {
+    color: #ff8000;
+}
+
+nav>ul>li:hover .nav-sub {
+    display: block;
+}
+
+header .nav-sub {
+    height: 150px;
+    width: 100%;
+    background-color: #fafafa;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+header .nav-sub ul {
+    height: 100%;
+    margin: auto;
+}
+
+header .nav-sub ul li {
+    float: left;
+    padding-top: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+header .nav-sub ul li+li {
+    margin-left: 80px;
+}
+
+header .nav-sub ul li a:hover {
+    color: #ff8000;
+}
+
+header .nav-sub ul li img {
+    height: 100px;
+    -webkit-transition: transform .3s;
+    transition: transform .3s;
+}
+
+header .nav-sub ul li img:hover {
+    transform: translate(-10px,0px);
+}
+
+header .nav-sub ul li p {
+    line-height: 40px;
+}

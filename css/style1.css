@@ -1,0 +1,76 @@
+
+
+
+.wrapper{
+    width:100%;
+    height: 319px;
+
+    overflow: hidden;
+    position: relative;
+}
+.wrapper ul{
+    position:relative;
+}
+
+.wrapper ul li{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.wrapper ul li img{width: 100%;margin-top: 62px ;height: 319px;}
+.wrapper ol{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 190px;
+}
+.wrapper ol li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 50%;
+
+    background-color: #fff;
+    cursor: pointer;
+}
+.wrapper ol li.current{
+    background-color: pink;
+    color: #fff;
+}
+.pho {width:100%;display: flex;float: left;background: #ffffff;
+padding-top: 15px;padding-bottom: 19px;height: 369px;
+}
+.pho .imgs1{height:336px;flex: 1;background: #e4e4e4;}
+.pho .imgs2{height:336px;flex: 1;background: #e4e4e4;}
+.pho .imgs3{height:336px;flex: 1;background: #e4e4e4;}
+.pho img{width:408px ;height: 246px;}
+.pho a {text-align: center;}
+.pho a p{text-align: center;line-height: 30px;color:#000;font-weight: bolder;font-size: 16px;}
+.pho a span{text-align: center;color: #666;}
+.tubiao{height: 168px;width: 100%;background: #fafafa;
+    border-top: 1px solid #f6f6f6;padding-top: 369px;
+
+
+}
+.tubiao img{margin: 0 auto;padding-left: 555px; }
+.tubiao p{text-align: center;font-weight: bolder;}
+.fina { width:100%;height:200px;border-top: 5px solid #ececec;border-bottom: 1px solid #eee;}
+dl{float: left;padding :30px 30px 25px 30px; }
+a{color: #666;}
+dt{font-size: 14px;font-weight: bolder;padding-bottom: 18px;  }
+dd{padding-bottom: 12px; text-decoration: none;color: #666; }
+.fina-right{margin-top: 24px;float: left;margin-left: 64px;}
+
+.fina-rights{margin-bottom:16px; }
+.fina-rights img{float: left;border: none;vertical-align: middle; }
+.fina-rights b{color: #f08300;font-size: 16px;}
+.fina-rights span{color: red;}
+
+.fina-top p{ line-height: 30px;color: #666; }
+.fina-bottom{height: 50px;margin-top: 20px;text-align: center;color:#a4a9ad; }
+.fina-bottom a{color: #a4a9ad;}
+.logos{position: fixed;right: 0%;bottom: 6.6rem;z-index: 9999;width: 50px;height: 153px;
+background-image:url(../img/online.png) no-repeat center;cursor: pointer;
+}
