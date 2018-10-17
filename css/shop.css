@@ -1,0 +1,126 @@
+.shopping_list {
+    text-align: center;
+    overflow: hidden;
+    width: 1180px;
+    background: #fff;
+    margin: 20px auto 0 auto;
+    font-size: 14px;
+    padding: 63px 0;
+}
+.shopping_title {
+    overflow: hidden;
+    padding: 25px 40px;
+    border-bottom: 1px solid #f7f7f7;
+}
+.shopping_block div,.shopping_title div{
+    float:left;
+}
+.shopping_list .check_box {
+    width: 30px;
+   margin-top: 6px;
+    float: left;
+}
+.shopping_list .shopping_img {
+    width: 145px;
+    text-align: left;
+}
+.shopping_list .shopping_info {
+    width: 300px;
+    text-align: left;
+}
+.shopping_list .shopping_price {
+    width: 130px;
+}
+.shopping_list .shopping_num {
+    width: 200px;
+}
+.shopping_list .shopping_subtotal {
+    width: 130px;
+}
+.shopping_list .shopping_operation {
+    width: 155px;
+    line-height: 16px;
+}
+.shopping_list .check_box .ed {
+
+    width: 18px;
+    height: 18px;
+
+}
+.shopping_list .check_box i {
+    cursor: pointer;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+
+    top: 38%;
+}
+.shopping_result{
+    text-align:center;
+    overflow:hidden;
+    width:1180px;
+    background:#fff;
+    margin:20px auto 0 auto;
+    font-size:14px;
+}
+.shopping_result_title{
+    float:left;
+    overflow:hidden;
+    width:960px;
+    padding:25px 0px 25px 40px;
+}
+.shopping_result .check_box{
+    width:40px;
+    line-height:18px;
+    text-align:left;
+}
+.shopping_result .check_box i{
+    cursor:pointer;
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url(../img/check_box.png) no-repeat;
+}
+.shopping_result .check_box .ed{
+    display:inline-block;
+    width:18px;height:18px;
+    background:url(../img/check_box_ed.png) no-repeat;
+}
+.shopping_result_operation{
+    width:480px;
+}
+.shopping_result_operation span{
+    cursor:pointer;
+    float:left;
+    margin-right:30px;
+}
+.shopping_result_num span{
+    color:#ee8282;
+}
+.shopping_result_title div{
+    float:left;
+}
+.shopping_result_sub{
+    cursor:pointer;
+    float:right;
+    font-size:22px;
+    width:180px;
+    height:70px;
+    line-height:70px;
+    text-align:center;
+    color:#fff;
+    background:#dfdfdf;
+}
+.shopping_result_sub.ed{
+    background:#30c2b0;
+}
+.shopping_result_title .shopping_result_total{
+    float:right;
+    margin-right:30px;
+}
+.shopping_result_total span{
+    color:#e44949;
+    font-size:20px;
+    line-height:14px;
+}

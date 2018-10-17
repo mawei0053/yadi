@@ -20,6 +20,13 @@ header .logo {
 header .header-right {
     float: right;
 }
+header .header-button {
+    font-size:12px;
+    color:#fff;
+    background-color:#f78200;
+    border-radius: 20px;
+
+}
 
 header .header-right a:hover {
     color: #ff8000;

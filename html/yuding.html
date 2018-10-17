@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="../js/jquery-3.1.0.js"></script>
+
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/yuding.css">
 </head>
 <body>
 <header>
@@ -14,10 +16,16 @@
             <a href="yadi.html"><img src="../img/logo.png" alt="雅迪电动车" /></a>
         </div>
         <div class="header-right">
-            <ul style="margin-left: 20px;"><li><a href="http://old.yadea.com.cn:8080" style="color: #999;">切换旧版</a></li></ul>
+            <ul style="margin-left: 20px;">
+                <li>
+                    <a href="shop.html" style="color: #999;">
+                        <button style="width: 80px;height: 32px;background: #f78200;border-radius: 20px;border: none;cursor: pointer;color: #fff;" class="shop-button">我的购物车</button>
+                    </a>
+                </li>
+            </ul>
             <ul style="margin-right: 20px;">
                 <li>
-                    <a href="" style="padding: 0px;">简体</a>
+                    <a href="" style="padding: 0px;">简体v</a>
                     <i class="icon-font icon-angledown"></i>
                     <ul class="drop-menu">
                         <li><a href="http://old.yadea.com.cn:8080/ft/">繁体</a></li>
@@ -31,30 +39,30 @@
     <nav>
         <ul>
             <li>
-                <a href="http://www.yadea.com.cn/">首页</a>
+                <a href="yadi.html">首页</a>
             </li>
             <li>
                 <div style="background: #ff8000;width: 100%;border-radius: 3px;">
-                    <a href="http://www.yadea.com.cn/goods/online.html" style="color: #fff;display: inline-block;line-height: 38px;padding: 0 10px;">在线预订</a>
+                    <a href="yuding.html" style="color: #fff;display: inline-block;line-height: 38px;padding: 0 10px;">在线预订</a>
                 </div>
                 <!-- <div class="nav-sub">
                     <ul style="width: 520px;">
-    <li>
-    <a data-id="103" href="/cat/103.html"><img src="/uploads/images/20170715/f4468ce025fbb2f85fb0fd6b25a1bacb.png" alt="雅迪户外系列电动车价格及图片"><p>户外系列</p></a>
-</li>
-    <li>
-    <a data-id="101" href="/cat/101.html"><img src="/uploads/images/20170715/126948d9754214cfb5ef8780868944d3.png" alt="雅迪运动系列电动车价格及图片"><p>运动系列</p></a>
-</li>
-    <li>
-    <a data-id="102" href="/cat/102.html"><img src="/uploads/images/20170715/824b510f26d473084e9bd11edf8e1ee3.png" alt="雅迪缤钻系列电动车价格及图片"><p>缤钻系列</p></a>
-</li>
-</ul>					</div> -->
+                <li>
+                <a data-id="103" href="/cat/103.html"><img src="/uploads/images/20170715/f4468ce025fbb2f85fb0fd6b25a1bacb.png" alt="雅迪户外系列电动车价格及图片"><p>户外系列</p></a>
+                </li>
+                <li>
+                <a data-id="101" href="/cat/101.html"><img src="/uploads/images/20170715/126948d9754214cfb5ef8780868944d3.png" alt="雅迪运动系列电动车价格及图片"><p>运动系列</p></a>
+                </li>
+                <li>
+                <a data-id="102" href="/cat/102.html"><img src="/uploads/images/20170715/824b510f26d473084e9bd11edf8e1ee3.png" alt="雅迪缤钻系列电动车价格及图片"><p>缤钻系列</p></a>
+                </li>
+                </ul>					</div> -->
             </li>
             <li>
                 <a href="http://www.yadea.com.cn/service/index.html">服务及网点</a>
             </li>
             <li>
-                <a href="http://www.yadea.com.cn/bbs/">社区</a>
+                <a href="bbs.html">社区</a>
             </li>
             <li>
                 <a href="http://www.yadea.com.cn/group/index.html">团购</a>
@@ -65,7 +73,190 @@
 
         </ul>
     </nav>
+    </header>
 
-</header>
+<div id="car-box">
+    <div id="car-list">
+        <h2>运动系列</h2>
+        <ul>
+            <li>
+                <div  class="car-item">
+                    <div class="item-img">
+                        <img src="../img/01.png" alt="雅迪电动车，Z3s价格及图片">
+                    </div>
+                    <div class="item-des">
+                        <h1>Z3s</h1>
+
+                        <div class="des-detail">
+                            更高端 更智能                        </div>
+
+                        <p class="item-price" style="height: 70px;">价格<b>¥ 8688</b>
+                            <span style="font-size: 16px; color: #f00; margin: 0px;">选配合金套装（铝合金平叉、护杠）另加300元</span>
+                        </p>
+
+                        <p class="item-color">颜色
+                            <span style="background-color:#ffffff"></span>
+                            <span style="background-color:#000000"></span>
+                        </p>
+
+                        <button class="item-button"><b>加入购物车</b></button>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <h2>缤钻系列</h2>
+        <ul>
+            <li>
+                <div  class="car-item">
+                    <div class="item-img">
+                        <img src="../img/02.png" alt="雅迪电动车，莱客价格及图片">
+                    </div>
+                    <div class="item-des">
+                        <h1>莱客</h1>
+
+                        <div class="des-detail">
+                            超大座桶   超级能装                        </div>
+
+                        <p class="item-price" style="height: 70px;">价格<b>¥ 4190</b>
+                        </p>
+
+                        <p class="item-color">颜色
+                            <span style="background-color:#ffffff"></span>
+                            <span style="background-color:#ffff00"></span>
+                            <span style="background-color:#ff0000"></span>
+                        </p>
+
+                        <button class="item-button"><b>加入购物车</b></button>
+                </div>
+            </li>
+            <li>
+                <div  class="car-item">
+                    <div class="item-img">
+                        <img src="../img/03.png" alt="雅迪电动车，米纳价格及图片">
+                    </div>
+                    <div class="item-des">
+                        <h1>米纳</h1>
+
+                        <div class="des-detail">
+                            就是那么能装，想装多少由你来定                        </div>
+
+                        <p class="item-price" style="height: 70px;">价格<b>¥ 4290</b>
+                        </p>
+
+                        <p class="item-color">颜色
+                            <span style="background-color:#ffffff"></span>
+                            <span style="background-color:#ffff00"></span>
+                            <span style="background-color:#c0c0c0"></span>
+                        </p>
+
+                        <button class="item-button"><b>加入购物车</b></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <h2>户外系列</h2>
+        <ul>
+            <li>
+                <div  class="car-item">
+                    <div class="item-img">
+                        <img src="../img/04.png" alt="雅迪电动车，X5智慧版价格及图片">
+
+                    </div>
+                    <div class="item-des">
+                        <h1>X5智慧版</h1>
+
+                        <div class="des-detail">
+                            传承X家族线锋利、造型狂野风格，身份辨识度极高，全新运动风格颜色贴花，更显活力，动感十足                        </div>
+
+                        <p class="item-price" style="height: 70px;">价格<b>¥ 5890</b>
+                        </p>
+
+                        <p class="item-color">颜色
+                            <span style="background-color:#00ff00"></span>
+                            <span style="background-color:#ff0000"></span>
+                            <span style="background-color:#00ffff"></span>
+                            <span style="background-color:#ffffff"></span>
+                        </p>
+
+                       <button class="item-button"><b>加入购物车</b></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="fina">
+    <div class="fina-left">
+        <dl>
+            <dt>关于我们</dt>
+            <dd><a href="">走进雅迪</a></dd>
+            <dd><a href="">投资者关系</a></dd>
+            <dd><a href="">联系我们</a></dd>
+            <dd><a href="">雅迪社区</a></dd>
+        </dl>
+        <dl>
+            <dt>在线预订</dt>
+            <dd><a href="">车辆预订</a></dd>
+            <dd><a href="">预订查询</a></dd>
+        </dl>
+        <dl>
+            <dt>新闻中心</dt>
+            <dd><a href="">公司动态</a></dd>
+            <dd><a href="">市场活动</a></dd>
+            <dd><a href="">社会责任</a></dd>
+        </dl>
+        <dl>
+            <dt>市场支持</dt>
+            <dd><a href="">网点查询</a></dd>
+            <dd><a href="">服务理念</a></dd>
+            <dd><a href="">三包标准</a></dd>
+        </dl>
+        <dl>
+            <dt>人才招聘</dt>
+            <dd><a href="">社会招聘</a></dd>
+            <dd><a href="">校园招聘</a></dd>
+        </dl>
+        <dl>
+            <dt>客服中心</dt>
+            <dd><a href="">在线客服</a></dd>
+        </dl>
+        <dl>
+            <dt>关注我们</dt>
+            <dd><a href=""><img src="../img/concern-wechat.png" alt="">官方微信</a></dd>
+            <dd><a href=""><img src="../img/concern-wechat.png" alt="">官方商城</a></dd>
+            <dd><a href=""><img src="../img/concern-weibo.png" alt="">官方微博</a></dd>
+        </dl>
+    </div>
+    <div class="fina-right">
+        <div class="fina-rights">
+            <img src="../img/hot-line.png" alt="">
+            <p>热线电话</p>
+            <b>400-900-1212</b>
+            <span>(8:00-24:00)</span>
+        </div>
+
+        <div>   雅迪科技集团有限公司</div>
+
+
+        <div class="fina-top">
+
+            <p><img src="../img/email.png" alt=""><span>sales@yadea.com.cn</span></p>
+            <p><img src="../img/location.png" alt=""><span>上海市闵行区兴虹路187弄7号楼3楼</span></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="fina-bottom">
+    <p>© 2017 <span>雅迪科技集团有限责任公司</span> All Rights Reserved <a href="http://www.miitbeian.gov.cn/">苏ICP备12080415号</a></p>
+    <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32020502000068"><img src="../img/ba.png" alt=""><span>苏公网安备 32020502000068号</span></a></p>
+</div>
+
 </body>
+    <script  src="../js/yuding.js"></script>
+    <script src="../js/jquery.min.js"></script>
+        <script>
+             shopList.init('.main');
+        </script>
 </html>

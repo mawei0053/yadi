@@ -14,8 +14,8 @@ var swiper = (function () {
         event: function () {
             var _this = this;
             uuBox.onclick = function (ev) {
-                ev = ev || window.event
-                var target = ev.target || ev.srcElement
+                ev = ev || window.event;
+                var target = ev.target || ev.srcElement;
                 if (target.nodeName === 'LI') {
                     _this.showImage(target.innerHTML - 1);
                     _this.autoPlay(target.innerHTML - 1);
@@ -36,7 +36,7 @@ var swiper = (function () {
             }
             // 让图片先显示，在从透明度0到1；
             liBox[index].style.display = 'block';
-            startMove(liBox[index], {opacity: 1000});
+            startMove(liBox[index], {opacity: 100});
             uuLiBox[index].className = 'current';
         },
         autoPlay: function (index) {

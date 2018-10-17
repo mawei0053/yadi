@@ -1,0 +1,123 @@
+*{box-sizing: border-box;}
+#car-box{
+    width:100%;
+    background-color:#f8f8f8;
+    padding: 63px 0;
+}
+#car-list{
+    width:1190px;
+    margin: 0 auto;
+}
+#car-list .car-tilte{
+    width: 1190px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 25px;
+    line-height: 50px;
+}
+#car-list p span{
+    color:#000000;
+}
+#car-list ul{
+    font-size: 0;
+    clear: both;
+    overflow: hidden;
+    zoom:1;
+}
+#car-list ul li{
+    list-style: none;
+    float:left;
+    width:287px;
+    background-color: #fff;
+    margin-right:10px;
+    margin-bottom: 25px;
+    border:1px solid #e7e7e7;
+    height:auto;
+    padding: 0;
+}
+#car-list ul li:hover{
+    border-color:#f78200;
+
+}
+#car-list ul li:last-of-type{
+    margin-right: 0;
+}
+.car-item .item-img{
+    width:280px;
+    height:280px;
+    line-height:280px;
+    margin: 0 auto;
+    text-align: center;
+}
+.car-item .item-img img{
+    max-width: 280px;
+    max-height: 280px;
+}
+.car-item .item-des{
+    font-size: 8.7px;
+    line-height:15px;
+    color:#323232;
+    width:280px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.car-item .item-des h1{
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.car-item .des-detail{
+    height:58px;
+    font-size:12px;
+    line-height:18px;
+    width:100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow:hidden;
+}
+.car-item .item-des .item-price{
+    border-top: 2px dashed #d7d7d7;
+    padding-top:10px;
+    margin-top:10px;
+}
+.car-item .item-des p{
+    font-size:14px;
+    line-height:30px;
+    width:100%;
+}
+.car-item .item-des p b{
+    font-size: 20px;
+    color:#f78200;
+    padding-left:20px;
+}
+.car-item .item-des .item-color  span:first-child{
+    margin-left:16px;
+}
+.car-item .item-des .item-color  span{
+    display: inline-block;
+    width:13px;
+    height:13px;
+    border:1px solid #888;
+    border-radius:50%;
+    margin-left:3px;
+    vertical-align:middle;
+}
+.item-button{
+    margin-top: 10px;
+    line-height: 32px;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+}
+.item-button b{
+    font-size:12px;
+    color:#fff;
+    background-color:#f78200;
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+.item-button a.disabled {
+    background-color: #ccc;
+}
+#car-list h2{padding-bottom: 15px;}
