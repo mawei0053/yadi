@@ -1,30 +1,27 @@
 *{box-sizing: border-box;}
-#car-box{
+.main{
     width:100%;
     background-color:#f8f8f8;
     padding: 63px 0;
 }
-#car-list{
-    width:1190px;
-    margin: 0 auto;
-}
-#car-list .car-tilte{
+
+.main .car-tilte{
     width: 1190px;
     margin: 0 auto;
     color: #666;
     font-size: 25px;
     line-height: 50px;
 }
-#car-list p span{
+.main p span{
     color:#000000;
 }
-#car-list ul{
+.main ul{
     font-size: 0;
     clear: both;
     overflow: hidden;
     zoom:1;
 }
-#car-list ul li{
+.main ul li{
     list-style: none;
     float:left;
     width:287px;
@@ -35,11 +32,11 @@
     height:auto;
     padding: 0;
 }
-#car-list ul li:hover{
+.main ul li:hover{
     border-color:#f78200;
 
 }
-#car-list ul li:last-of-type{
+.main ul li:last-of-type{
     margin-right: 0;
 }
 .car-item .item-img{
@@ -120,4 +117,4 @@
 .item-button a.disabled {
     background-color: #ccc;
 }
-#car-list h2{padding-bottom: 15px;}
+.main h2{padding-bottom: 15px;}

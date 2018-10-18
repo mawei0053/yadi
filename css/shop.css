@@ -1,5 +1,5 @@
 .shopping_list {
-    text-align: center;
+    /*text-align: center;*/
     overflow: hidden;
     width: 1180px;
     background: #fff;
@@ -15,10 +15,11 @@
 .shopping_block div,.shopping_title div{
     float:left;
 }
-.shopping_list .check_box {
+.main .check_box {
     width: 30px;
    margin-top: 6px;
     float: left;
+
 }
 .shopping_list .shopping_img {
     width: 145px;
@@ -56,6 +57,30 @@
 
     top: 38%;
 }
+.main {
+    overflow: hidden;
+    padding: 15px 45px;
+    border-bottom: 1px solid #f7f7f7;
+}
+.shopping_block div,.main div{
+    float:left;
+}
+.main .shop-name{
+    padding-left: 110px;
+}
+.main .shop-price{
+    padding-left: 250px;
+}
+.main .shop-count{
+    width: 40px;
+    margin-left: 80px;
+}
+.main .shop-total{
+    padding-left: 150px;
+}
+.main .shop-btn-del{
+    margin-left: 100px;float: right;
+}
 .shopping_result{
     text-align:center;
     overflow:hidden;
@@ -74,18 +99,19 @@
     width:40px;
     line-height:18px;
     text-align:left;
+    float: left;
 }
 .shopping_result .check_box i{
     cursor:pointer;
     display:inline-block;
     width:18px;
     height:18px;
-    background:url(../img/check_box.png) no-repeat;
+
 }
 .shopping_result .check_box .ed{
     display:inline-block;
     width:18px;height:18px;
-    background:url(../img/check_box_ed.png) no-repeat;
+
 }
 .shopping_result_operation{
     width:480px;
@@ -123,4 +149,9 @@
     color:#e44949;
     font-size:20px;
     line-height:14px;
+}
+.shopping_title .check_box{ width: 30px;
+    margin-top: 6px;
+    float: left;
+
 }

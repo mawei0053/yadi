@@ -28,7 +28,9 @@ var  shopList = (function(){
                 url: '../json/shop.json',
                 success: function (data){
                     _this.insertData(data);
+
                 }
+
             }
             sendAjax(params);
         },
@@ -37,7 +39,34 @@ var  shopList = (function(){
             data = data.data;
             var arr = [];
             for(var i = 0; i < data.length; i++) {
-                arr.push(` <button class="item-button"><b>加入购物车</b></button>`)
+                arr.push(` <h2>${data[i].little}</h2>
+        <ul>
+            <li>
+                <div  class="car-item">
+                    <div class="item-img">
+                        ${data[i].img}
+                    </div>
+                    <div class="item-des">
+                        <h1>${data[i].name}</h1>
+
+                        <div class="des-detail">
+                            ${data[i].ps}                       </div>
+
+                        <p class="item-price" style="height: 70px;">${data[i].price}</b>
+                            <span style="font-size: 16px; color: #f00; margin: 0px;">${data[i].title}</span>
+                        </p>
+
+                        <p class="item-color">颜色
+                            <span style="background-color:#ffffff"></span>
+                            <span style="background-color:#000000"></span>
+                        </p>
+
+                        <button class="item-button" attr-id=${data[i].id}><b>加入购物车</b></button>
+
+                    </div>
+                </div>
+            </li>
+        </ul>`)
             }
             this.$ele.innerHTML = arr.join('');
         },

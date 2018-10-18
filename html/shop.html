@@ -73,7 +73,7 @@
         </ul>
     </nav>
 </header>
-<div class="shopping_list">
+<div class="shopping_list ">
     <div class="shopping_title">
         <input type="checkbox" class="check_box">
         <div class="shopping_img">全选</div>
@@ -83,10 +83,21 @@
         <div class="shopping_subtotal">小计</div>
         <div class="shopping_operation">操作</div>
     </div>
+    <div class="main">
+    <!--<div class="shopping_insert ">-->
+        <!--<input type="checkbox" class="check_box">-->
+        <!--<span class="shop-name">Z3s</span>-->
+        <!--<span class="shop-price">8688</span>-->
+        <!--<input class="shop-count" type="number" value="1" />-->
+        <!--<span class="shop-total">8688</span>-->
+        <!--<button class="btn shop-btn-del" onclick="remove('.shopping_insert')">删除</button>-->
+
+    <!--</div>-->
+    </div>
     <div class="shopping_result">
         <div class="shopping_result_title">
             <div class="check_box"><i class="shopping_all_check"></i></div>
-            <input type="checkbox" class="check_box">
+            <input type="checkbox" class="check_box" style="margin-top: 6px;">
             <div class="shopping_img"><span>全选</span>&nbsp;&nbsp;<span>批量删除</span></div>
             <div class="shopping_result_num">
                 已选商品 <span>0</span> 件
@@ -167,9 +178,10 @@
 </div>
 
 </body>
-    <script src="../js/jquery-3.1.0.js"></script>
+    <script src="../js/ajax2.0.0.js"></script>
     <script src="../js/shop.js"></script>
+    <script src="../js/jquery.min.js"></script>
 <script>
-    shopList.init('.main');
+    shopCar.init('.main');
 </script>
 </html>
